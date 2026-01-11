@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <h1>📚 Reading List</h1>
+            <div class="header-actions">
+                <button id="addArticleBtn" class="btn-icon" title="Add Article">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+                <button id="sendDigestBtn" class="btn-icon" title="Send Digest">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="unread">Unread</button>
+            <button class="filter-tab" data-filter="read">Read</button>
+            <button class="filter-tab" data-filter="favorited">Favorites</button>
+            <button class="filter-tab" data-filter="all">All</button>
+        </div>
+
+        <!-- Articles Container -->
+        <div id="articlesContainer" class="articles-container">
+            <div class="loading">Loading articles...</div>
+        </div>
+
+        <!-- Add Article Modal -->
+        <div id="addArticleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add Article</h2>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="url">From URL</button>
+                        <button class="tab-btn" data-tab="text">Paste Text</button>
+                    </div>
+
+                    <div id="urlTab" class="tab-content active">
+                        <input type="url" id="articleUrl" placeholder="Paste article URL here..." class="url-input">
+                    </div>
+
+                    <div id="textTab" class="tab-content">
+                        <input type="text" id="articleTitle" placeholder="Article title" class="url-input">
+                        <textarea id="articleText" placeholder="Paste article text here (for paywalled content like WSJ, ESPN, etc.)..." class="text-input"></textarea>
+                    </div>
+
+                    <button id="submitArticle" class="btn btn-primary">Add Article</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Detail Modal -->
+        <div id="articleModal" class="modal">
+            <div class="modal-content modal-large">
+                <div class="modal-header">
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body" id="articleDetail">
+                    <!-- Article details will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
