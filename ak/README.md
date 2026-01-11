@@ -1,6 +1,6 @@
-# Smart Reading List & Research Manager
+# Reading Agent
 
-A powerful, AI-powered reading list manager designed for venture capitalists and busy professionals. Seamlessly save articles, get intelligent summaries with cross-article insights, and receive daily digests - all optimized for mobile use.
+An AI-powered reading list manager designed for venture capitalists and busy professionals. Seamlessly save articles, get intelligent summaries with cross-article insights, and receive daily digests - all optimized for mobile use.
 
 ## Features
 

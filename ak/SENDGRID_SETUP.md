@@ -1,6 +1,6 @@
 # SendGrid Email Forwarding Setup
 
-This guide will help you set up email forwarding so you can forward newsletters and articles directly to your Reading List app.
+This guide will help you set up email forwarding so you can forward newsletters and articles directly to Reading Agent.
 
 ## Why SendGrid?
 

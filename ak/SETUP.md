@@ -1,6 +1,6 @@
 # Setup Guide
 
-This guide will walk you through setting up your Smart Reading List step-by-step.
+This guide will walk you through setting up Reading Agent step-by-step.
 
 ## Prerequisites
 
